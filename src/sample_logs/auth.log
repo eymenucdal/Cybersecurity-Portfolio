@@ -1,0 +1,26 @@
+Jul 10 22:10:12 server sshd[1201]: Accepted password for analyst from 192.168.1.10 port 49100 ssh2
+Jul 10 22:10:25 server sshd[1202]: Accepted password for backupsvc from 10.0.5.12 port 49101 ssh2
+Jul 10 22:10:41 server sshd[1203]: Failed password for developer from 192.168.1.25 port 49102 ssh2
+Jul 10 22:10:55 server sshd[1204]: Failed password for developer from 192.168.1.25 port 49103 ssh2
+Jul 10 22:11:08 server sshd[1205]: Accepted password for developer from 192.168.1.25 port 49104 ssh2
+Jul 10 22:11:03 server sshd[1234]: Failed password for admin from 185.10.10.10 port 49200 ssh2
+Jul 10 22:11:08 server sshd[1239]: Failed password for admin from 185.10.10.10 port 49201 ssh2
+Jul 10 22:11:12 server sshd[1240]: Failed password for admin from 185.10.10.10 port 49202 ssh2
+Jul 10 22:11:16 server sshd[1241]: Failed password for admin from 185.10.10.10 port 49203 ssh2
+Jul 10 22:11:20 server sshd[1242]: Failed password for admin from 185.10.10.10 port 49204 ssh2
+Jul 10 22:11:25 server sshd[1243]: Accepted password for admin from 185.10.10.10 port 49205 ssh2
+Jul 10 22:12:01 server sshd[1244]: Failed password for user2 from 91.22.33.44 port 50010 ssh2
+Jul 10 22:12:05 server sshd[1245]: Failed password for user3 from 91.22.33.44 port 50011 ssh2
+Jul 10 22:12:08 server sshd[1246]: Failed password for user4 from 91.22.33.44 port 50012 ssh2
+Jul 10 22:12:12 server sshd[1247]: Failed password for user5 from 91.22.33.44 port 50013 ssh2
+Jul 10 22:12:20 web01 sshd[1248]: Failed password for invalid user root from 45.33.32.156 port 51000 ssh2
+Jul 10 22:12:26 db01 sshd[1249]: Failed password for invalid user oracle from 45.33.32.156 port 51001 ssh2
+Jul 10 22:12:42 server sshd[1250]: Failed password for finance1 from 192.168.1.99 port 52000 ssh2
+Jul 10 22:12:46 server sshd[1251]: Failed password for finance2 from 192.168.1.99 port 52001 ssh2
+Jul 10 22:12:50 server sshd[1252]: Failed password for finance3 from 192.168.1.99 port 52002 ssh2
+Jul 10 22:12:54 server sshd[1253]: Failed password for finance4 from 192.168.1.99 port 52003 ssh2
+Jul 10 22:13:10 server sshd[1254]: Accepted password for analyst from 192.168.1.10 port 52100 ssh2
+Jul 10 22:13:18 web01 sshd[1255]: Accepted password for webadmin from 172.16.2.20 port 52101 ssh2
+Jul 10 22:13:30 db01 sshd[1256]: Failed password for dba from 172.16.2.20 port 52102 ssh2
+Jul 10 22:13:44 db01 sshd[1257]: Accepted password for dba from 172.16.2.20 port 52103 ssh2
+Jul 10 22:14:02 server sshd[1258]: Accepted password for support from 203.0.113.200 port 52104 ssh2
