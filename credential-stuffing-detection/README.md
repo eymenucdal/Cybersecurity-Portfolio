@@ -10,6 +10,8 @@ Credential stuffing attacks often rely on valid but previously leaked credential
 
 This project uses the **IEEE-CIS Fraud Detection** dataset from Kaggle.
 
+Dataset source: IEEE-CIS Fraud Detection on Kaggle: https://www.kaggle.com/competitions/ieee-fraud-detection/data
+
 The dataset is **not included** in this repository due to size and licensing considerations. The project expects the original IEEE-CIS files to be placed locally in the `data/` directory before running the pipeline.
 
 Expected files in the `data/` folder:
@@ -94,9 +96,13 @@ The following files are **not tracked in GitHub** because of repository size lim
 
 To reproduce the project locally:
 
-1. Download the IEEE-CIS Fraud Detection dataset from Kaggle.
-2. Place the CSV files in the `data/` directory.
+1. Download the IEEE-CIS Fraud Detection dataset from Kaggle: https://www.kaggle.com/competitions/ieee-fraud-detection/data
+2. Extract and place the following files in a local `data/` directory at the project root:
+   - `data/train_transaction.csv`
+   - `data/train_identity.csv`
 3. Run the pipeline from the project root.
+
+You may create the `data/` directory locally even though the raw dataset files are not stored in this repository.
 
 The trained `.joblib` files are generated automatically in the `results/` directory when the pipeline completes successfully.
 
