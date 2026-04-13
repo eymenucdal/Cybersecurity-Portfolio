@@ -1,0 +1,4 @@
+Bucket,Transactions,Fraud rate
+BLOCK,840,0.6786
+REVIEW,832,0.1226
+ALLOW,45183,0.0059

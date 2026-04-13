@@ -1,0 +1,6 @@
+Metric,Baseline Value,Optimized Value,Improvement (%)
+Accuracy,0.989,0.986,-0.3
+Precision,0.874,0.679,-22.31
+Recall,0.503,0.608,20.87
+F1-Score,0.638,0.642,0.63
+ROC AUC,0.917,0.939,2.4

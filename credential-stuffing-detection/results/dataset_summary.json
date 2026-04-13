@@ -1,0 +1,25 @@
+{
+    "shape": [
+        590540,
+        434
+    ],
+    "column_count": 434,
+    "target_distribution": {
+        "0": 569877,
+        "1": 20663
+    },
+    "top_missing_percent": {
+        "id_24": 99.2,
+        "id_25": 99.13,
+        "id_07": 99.13,
+        "id_08": 99.13,
+        "id_21": 99.13,
+        "id_26": 99.13,
+        "id_27": 99.12,
+        "id_23": 99.12,
+        "id_22": 99.12,
+        "dist2": 93.63
+    },
+    "numeric_columns": 403,
+    "categorical_columns": 31
+}
