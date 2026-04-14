@@ -1,4 +1,4 @@
-# CyberSecurity Portfolio
+# Cybersecurity Portfolio
 
 This repository contains my cybersecurity projects, including detection tools, machine learning-based attack analysis, and hands-on penetration testing write-ups.
 
