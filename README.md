@@ -5,9 +5,9 @@ This repository contains my cybersecurity projects, including detection tools, m
 ## About Me
 
 Eymen Ucdal
-Recent Computer Systems Graduate – Riga Technical University (RTU)
+MSc student in Cybersecurity Engineering – Riga Technical University (RTU)
 
-I am building my career in cybersecurity with a strong interest in penetration testing and red teaming, while also developing skills in blue teaming such as detection engineering and SOC analysis. My goal is to continue improving my skills in both attacker and defender perspectives and apply that knowledge in real-world environments.
+I am building my career in cybersecurity with a strong interest in penetration testing and red teaming, while also developing skills on the defensive side such as detection engineering and SOC analysis. My goal is to keep improving from both the attacker and defender perspective and apply that knowledge in real-world environments.
 
 ## Projects
 
@@ -68,12 +68,12 @@ Hands-on write-ups documenting the process of solving real-world security challe
 - Penetration testing (CPTS in progress)
 - Active Directory attacks and lateral movement
 - Privilege escalation (Windows & Linux)
-- Web application testing basics (authentication, injection, enumeration)
+- Web application testing (enumeration, authentication, injection)
 
 **Defensive Security:**
 - Authentication log analysis and anomaly detection
 - Detection logic development (brute force, spraying, correlation)
-- Basic understanding of SOC workflows and alert investigation
+- SOC workflows and alert investigation
 
 **Programming & Systems:**
 - Python (automation, data analysis, detection logic)
