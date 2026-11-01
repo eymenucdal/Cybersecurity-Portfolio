@@ -23,7 +23,7 @@ A Python-based tool designed to analyze authentication logs and detect suspiciou
 - Suspicious login success correlation
 - Multi-host targeting detection
 - IOC (Indicator of Compromise) matching
-- Support for SSH logs and Windows authentication logs
+- Support for SSH `auth.log`, Windows JSONL, and raw `.evtx` authentication logs
 
 **Location:**
 `soc-analyzer/`
@@ -32,7 +32,7 @@ A Python-based tool designed to analyze authentication logs and detect suspiciou
 
 ### 2. Credential Stuffing Detection (Machine Learning)
 
-A machine learning-based project focused on detecting credential stuffing attacks using the IEEE-CIS Fraud Detection dataset.
+Code and results from my bachelor's thesis at RTU (2026), "Optimization of Machine Learning-Based Detection of Credential Stuffing Attacks in Payment Gateways", using the IEEE-CIS Fraud Detection dataset as a proxy for credential-stuffing abuse.
 
 **Key Components:**
 - Data preprocessing and feature engineering
@@ -47,15 +47,15 @@ A machine learning-based project focused on detecting credential stuffing attack
 
 ---
 
-### 3. Security Write-Ups (HTB Labs)
+### 3. Penetration Testing Write-Ups (Hack The Box)
 
-Hands-on write-ups documenting the process of solving real-world security challenges.
+Report-style write-ups of retired Hack The Box machines, written from my own lab work.
 
-**Includes:**
-- Enumeration techniques
-- Exploitation steps
-- Post-exploitation insights
-- Supporting screenshots and analysis
+**Currently included:**
+- `cap-writeup/` – Cap (Linux): IDOR leading to credential disclosure, privilege escalation via a misconfigured Linux capability
+- `support-writeup/` – Support (Windows Domain Controller): credential recovery from a client binary, LDAP enumeration, BloodHound analysis, escalation to SYSTEM via a delegation misconfiguration
+
+Each write-up covers enumeration, exploitation, privilege escalation, and remediation notes, with screenshots.
 
 **Location:**
 `htb-writeups/`
@@ -65,15 +65,15 @@ Hands-on write-ups documenting the process of solving real-world security challe
 ## Technical Focus
 
 **Offensive Security:**
-- Penetration testing (CPTS in progress)
+- Penetration testing (HTB Certified Penetration Testing Specialist, CPTS, October 2026)
 - Active Directory attacks and lateral movement
 - Privilege escalation (Windows & Linux)
 - Web application testing (enumeration, authentication, injection)
 
 **Defensive Security:**
-- Authentication log analysis and anomaly detection
-- Detection logic development (brute force, spraying, correlation)
-- SOC workflows and alert investigation
+- Authentication log parsing and normalization (SSH, Windows)
+- Rule-based detection logic (brute force, spraying, fail-to-success correlation)
+- Supervised ML classification for abuse detection (Random Forest, SHAP, calibration)
 
 **Programming & Systems:**
 - Python (automation, data analysis, detection logic)
@@ -82,24 +82,24 @@ Hands-on write-ups documenting the process of solving real-world security challe
 
 ## Current Focus
 
-- Completing CPTS (Certified Penetration Testing Specialist) on HackTheBox
-- Building practical tools and write-ups
-- Strengthening both offensive and defensive skill sets
-- Preparing for entry-level cybersecurity roles
+- HTB Certified Web Exploitation Specialist (CWES) path, exam planned for December 2026
+- Python and backend fundamentals refresh
+- Cloud and Kubernetes security fundamentals
+- Looking for a first security role or internship alongside the MSc
 
 ## Future Improvements
 
-- Expand detection logic in SOC tool (behavior-based detection, correlation improvements)
-- Add more write-ups from real-world labs and environments
-- Improve ML model with additional features and datasets
+- Expand detection logic in the SOC tool (behavior-based detection, correlation improvements)
+- Add more write-ups from retired machines and lab environments
+- Improve the ML model with additional features and datasets
 - Develop additional security tools
 
 ## Notes
 
-This portfolio is continuously evolving as I learn and build new projects. Each project reflects practical work and hands-on experience.
+This portfolio is continuously evolving as I learn and build new projects.
 
 ## Contact
 
 - GitHub: https://github.com/eymenucdal
-- LinkedIn: https://www.linkedin.com/in/eymen-ucdal-4450b53b7
+- LinkedIn: https://www.linkedin.com/in/eymenucdal
 - Email: eymen.ucdal@outlook.com
