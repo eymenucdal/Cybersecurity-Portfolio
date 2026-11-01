@@ -42,42 +42,59 @@ Each IP is assigned a maximum severity level based on detected activity.
 ## Project Structure
 
 ```
-SOC_analyzer/
-└── src/
-    ├── main.py
-    ├── README.md
-    ├── sample_logs/
-    │   ├── auth.log
-    │   └── windows_auth.jsonl
-    └── iocs/
-        └── bad_ips.txt
+soc-analyzer/
+├── README.md
+├── src/
+│   └── main.py
+├── sample_logs/
+│   ├── auth.log
+│   └── windows_auth.jsonl
+└── iocs/
+    └── bad_ips.txt
+```
+
+---
+
+## Requirements
+
+- Python 3.10 or newer (uses `X | Y` type unions)
+- No third-party packages for SSH and JSONL input
+- Raw `.evtx` input additionally requires `python-evtx`:
+
+```bash
+pip install python-evtx
 ```
 
 ---
 
 ## Usage
 
-Run the tool from the `src` directory:
+Run the tool from the `soc-analyzer/` directory:
 
 ```bash
-python3 main.py -l sample_logs/auth.log
+python3 src/main.py -l sample_logs/auth.log
 ```
 
 ```bash
 # With IOC enrichment (optional)
-python3 main.py -l sample_logs/auth.log -i iocs/bad_ips.txt
+python3 src/main.py -l sample_logs/auth.log -i iocs/bad_ips.txt
+```
+
+```bash
+# Windows JSONL sample
+python3 src/main.py -l sample_logs/windows_auth.jsonl -i iocs/bad_ips.txt
 ```
 
 ### JSON output
 
 ```bash
-python3 main.py -l sample_logs/auth.log -i iocs/bad_ips.txt --json
+python3 src/main.py -l sample_logs/auth.log -i iocs/bad_ips.txt --json
 ```
 
 ### Save JSON output to a file
 
 ```bash
-python3 main.py -l sample_logs/auth.log -i iocs/bad_ips.txt --json --output results.json
+python3 src/main.py -l sample_logs/auth.log -i iocs/bad_ips.txt --json --output results.json
 ```
 
 ---
@@ -170,5 +187,5 @@ This project demonstrates:
 ## Author
 
 Eymen Ucdal  
-Recent Computer Systems Graduate, Riga Technical University (RTU)  
-Focused on cybersecurity, with interests in both detection engineering and offensive security (CPTS in progress)
+MSc Cybersecurity Engineering student, Riga Technical University (RTU); BSc Computer Systems (RTU, 2026)  
+HTB Certified Penetration Testing Specialist (CPTS), October 2026
