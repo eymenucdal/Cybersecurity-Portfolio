@@ -248,7 +248,7 @@ def parse_logs(lines: list[str]) -> list[dict]:
     return events
 
 
-# === Raw .evtx parsing suppport ===
+# === Raw .evtx parsing support ===
 def parse_evtx(file_path: Path) -> list[dict]:
     """
     Parse raw Windows .evtx Security logs and normalize supported authentication
@@ -574,9 +574,7 @@ def main() -> None:
     args = parse_args()
 
     log_path = Path(args.log)
-    ioc_path = Path(args.ioc) if args.ioc else set()
-
-    ioc_ips = load_iocs(ioc_path)
+    ioc_ips = load_iocs(Path(args.ioc)) if args.ioc else set()
 
     if log_path.suffix.lower() == ".evtx":
         events = parse_evtx(log_path)
