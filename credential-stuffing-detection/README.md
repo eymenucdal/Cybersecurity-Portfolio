@@ -41,10 +41,9 @@ The thesis also documents the use of a stratified 80/20 split, class-weight hand
 
 ```text
 credential-stuffing-detection/
-├── data/
-│   └── README.md
+├── data/                      (not in the repository, see below)
 ├── docs/
-│   └── thesis.pdf
+│   └── rtu_bachelor_thesis.pdf
 ├── notebook/
 │   └── model.ipynb
 ├── results/
